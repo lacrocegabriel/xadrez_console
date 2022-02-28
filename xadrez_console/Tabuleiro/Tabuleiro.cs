@@ -1,17 +1,22 @@
 ﻿
-namespace Tabuleiro
+namespace tabuleiro
 {
     internal class Tabuleiro
     {
         public int Linhas { get; set; }
         public int Colunas { get; set; }
-        public Peca[,] pecas;
+        private Peca[,] pecas;
 
         public Tabuleiro(int linhas, int colunas)
         {
             Linhas = linhas;
             Colunas = colunas;
             pecas = new Peca[linhas, colunas];
+        }
+
+        public Peca peca (int Linha, int Coluna)
+        {
+            return pecas[Linha, Coluna];
         }
 
     }
