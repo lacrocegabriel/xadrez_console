@@ -8,18 +8,18 @@ namespace tabuleiro
 {
     class Posicao
     {
-        public int linha { get; set; }
-        public int coluna { get; set; }
+        public int Linha { get; set; }
+        public int Coluna { get; set; }
 
-        public Posicao(int Linha, int Coluna)
+        public Posicao(int linha, int coluna)
         {
-            linha = Linha;
-            coluna = Coluna;
+            Linha = linha;
+            Coluna = coluna;
         }
 
         public override string ToString()
         {
-            return linha + "," + coluna;
+            return Linha + "," + Coluna;
         }
     }
 }
