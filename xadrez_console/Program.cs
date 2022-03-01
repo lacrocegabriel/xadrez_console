@@ -20,7 +20,7 @@ namespace xadrez_console
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
 
-                while (!partida.terminada)
+                while (!partida.Terminada)
                 {
                     try
                     {
@@ -31,10 +31,10 @@ namespace xadrez_console
                         Console.Write("Origem: ");
                         Posicao origem = Tela.LerPosicaoXadrez().ToPosicao();
                         partida.ValidarPosicaoDeOrigem(origem);
-                        bool[,] posicoesPossiveis = partida.tab.Peca(origem).MovimentosPossiveis();
+                        bool[,] posicoesPossiveis = partida.Tab.Peca(origem).MovimentosPossiveis();
 
                         Console.Clear();
-                        Tela.ImprimirTabuleiro(partida.tab, posicoesPossiveis);
+                        Tela.ImprimirTabuleiro(partida.Tab, posicoesPossiveis);
 
 
                         Console.Write("Destino: ");

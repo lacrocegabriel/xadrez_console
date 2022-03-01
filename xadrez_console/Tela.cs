@@ -9,11 +9,11 @@ namespace xadrez_console
     {
         public static void ImprimirPartida(PartidaDeXadrez partida)
         {
-            ImprimirTabuleiro(partida.tab);
+            ImprimirTabuleiro(partida.Tab);
             Console.WriteLine();
             ImprimirPecasCapturadas(partida);
             Console.WriteLine();
-            Console.WriteLine("Turno: " + partida.turno);
+            Console.WriteLine("Turno: " + partida.Turno);
             Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
         }
 
